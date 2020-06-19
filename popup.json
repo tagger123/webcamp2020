@@ -1,0 +1,39 @@
+{
+  "popUp": [
+    {
+      "id": 0,
+      "name": "botki1",
+      "price": "123",
+      "img": "./gfx/but1.png",
+      "color": "../gfx/but1.png"
+    },
+    {
+      "id": 1,
+      "name": "botki2",
+      "price": "123",
+      "img": "./gfx/but2.png",
+      "color": "../gfx/but2.png"
+    },
+    {
+      "id": 2,
+      "name": "botki3",
+      "price": "123",
+      "img": "./gfx/but3.png",
+      "color": "../gfx/but3.png"
+    },
+    {
+      "id": 3,
+      "name": "botki4",
+      "price": "123",
+      "img": "./gfx/but4.png",
+      "color": "../gfx/but4.png"
+    },
+    {
+      "id": 4,
+      "name": "botki5",
+      "price": "123",
+      "img": "./gfx/but5.png",
+      "color": "../gfx/but5.png"
+    }
+  ]
+}

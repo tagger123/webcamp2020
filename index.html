@@ -5,189 +5,337 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./fontello/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Document</title>
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="up-one desktop">
-                <span>-20% na całą kolekcję zimową!></span>
-            </div>
-            <div class="up-two desktop">
-                <div></div>
-                <i class="icon-truck"> DARMOWA DOWSTAWA</i>
-                <i class="icon-return"> 30 DNI NA ZWROT</i>
-                <i class="icon-sale"> 10% NA PIERWSZE ZAKUPY</i>
-                <div></div>
-            </div>
-            
-            <div class="search">
-                <a href="../index.html"><img src="../gfx/Armodo_pl_LOGO.png" alt="#"></a>
-                <form class="desktop" action="#">
-                    <input type="text"><i class="icon-search"></i>
-                </form>
-                <div class="bucket">
-                    <div class="ico">
-                        <a href="#"><i class="icon-phone"></i></a>
-                        <a href="#"><i class="icon-group-1 desktop"></i></a>
-                        <a href="#"><i class="icon-heart"></i></a>
-                    </div>
-                    <div class="backet">
-                        <a href="#"><i class="icon-basket"></i>
-                        <div class="desktop">
-                            <span>Koszyk</span>
-                            <span>225,00 zł</span>    
-                        </div>
-                        <i class="icon-right-arrow desktop"></i>
-                        </a>
-                    </div>
-                    <div class="language desktop">
-                        <img src="../gfx/Group 540.png" alt="#">
-                        <i class="icon-down-open"></i>
-                    </div>
-                    <button class="mobile"><img src="../gfx/icon_hamburger.svg" alt=""></button>
+        <header id="header">
+            <a href="./index.html" title="main"><img src="./gfx/Armodo_pl_LOGO.png" alt="Logo"></a>
+            <form action="#">
+                <input type="text"><i class="icon-search"></i>
+            </form>
+            <a class="desktop" href="#" title="telephone"><i class="icon-phone"></i></a>
+            <a class="desktop" href="#" title="account"><i class="icon-group-1"></i></a>
+            <a href="#" title="likes"><i class="icon-heart"></i></a>
+            <a href="#" title="basket">
+            <div class="price">
+                <i class="icon-basket"></i>
+                <div class="desktop">
+                    <span>KOSZYK</span>
+                    <p>225,00zł</p>
                 </div>
+                <i class="icon-right-arrow desktop"></i>
             </div>
-            <nav>
-                <ul>
-                    <li><span>damskie</span></li>
-                    <li><span>męskie</span></li>
-                    <li><span>torebki</span></li>
-                    <li><span>akcesoria</span></li>
-                    <li>premium</li>
-                    <li>marki</li>
-                    <li>nowości</li>
-                    <li>wyprzedaż</li>
-                </ul>
-            </nav>
-            <div class="up-one mobile">
-                <span>-20% na całą kolekcję zimową!></span>
+            </a>
+            <div class="language desktop">
+                <button><img src="./gfx/pl.png" alt="pl"><i class="icon-down-open"></i></button>
             </div>
+            <button class="mobile"><img class="hamburger" onclick="hamburger()" src="./gfx/icon_hamburger.svg"></button>
         </header>
-    <main>
-        <section class="slider">
-            <div class="slider-items">
-                <div class="slider-item">
-                    <span>SLIDER</span>
-                </div>
-            </div>
-        </section>
-        <section class="brand-slider">
-            <img src="./gfx/vagabond.png" alt="#">
-            <img src="./gfx/ginorossi.png" alt="">
-            <img src="./gfx/karino.png" alt="">
-            <img src="./gfx/nessi.png" alt="">
-            <img src="./gfx/tamaris.png" alt="">
-            <img src="./gfx/vagabond.png" alt="">
-            <img src="./gfx/karino2.png" alt="">
-        </section>
-        <section class="baner">    
-            <div class="baner-item"><a href="#"><p>BANER REKLAMOWY</p></a></div>
-            <div class="baner-item"><a href="#"><p>BANER REKLAMOWY</p></a></div>
-            <div class="baner-item"><a href="#"><p>BANER REKLAMOWY</p></a></div>
-            <div class="baner-item"><a href="#"><p>BANER REKLAMOWY</p></a></div>
-            <div class="baner-item"><a href="#"><p>BANER REKLAMOWY</p></a></div>
-            <div class="baner-item"><a href="#"><p>BANER REKLAMOWY</p></a></div>
-        </section>
-        <section class="for-you">
-            <span>wybrane dla ciebie</span>
-            <div class="slider-for-you">
-                <div class="for-you-card">
-                    <img src="./gfx/but1.png" alt="#">
-                </div>
-            </div>
-        </section>
-        <section class="blog">
-            <span>@armodo - sprawdź co nowego</span>
-            <a href="#"><i class="icon-facebook2"></i></a><a href="#"><i class="icon-instagram"></i></a>
-            <div class="blog-slider">
-                <img src="./gfx/blog1.png" alt="#">
-                <img src="./gfx/blog2.png" alt="#">
-                <img src="./gfx/blog3.png" alt="#">
-                <img src="./gfx/blog4.png" alt="#">
-            </div>
-        </section>
-        <section class="benefits desktop">
-            <span>dlaczego warto kupować w armodo</span>
-            <div class="benefits-items">
-                <div class="benefits-card">
-                    <span>KORZYŚCI</span>
-                </div>
-                <div class="benefits-card">
-                    <span>KORZYŚCI</span>
-                </div>
-                <div class="benefits-card">
-                    <span>KORZYŚCI</span>
-                </div>
-                <div class="benefits-card">
-                    <span>KORZYŚCI</span>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <section class="newsletter">
-            <div>
-                <span>- 10% na pierwsze zakupy</span>
-                <span>Zapisz się do newslettera i zyskaj rabat</span>
-                <a href="#"><p>OTRZYMAJ RABAT</p></a>
-            </div>
-        </section>
-        <section class="footer-menu">
-            <ul>
-                <li>
+        <div class="discount"><a href="#" title="discount">-20% na całą kolekcję zimową!</a></div>
+        <div class="benefits-baner desktop">
+            <a href="#" title="dostawa"><i class="icon-truck"> darmowa dostawa</i></a>
+            <a href="#" title="dostawa"><i class="icon-return"> 30dni na zwrot</i></a>
+            <a href="#" title="dostawa"><i class="icon-sale"> 10% na pierwsze zakupy</i></a>
+        </div>
+        <nav id="nav">
+            <ul><a href="#" onclick="toggleDisplay('menu1')" title="damskie">DAMSKIE</a>
+                <li id="menu1">
+                <div class="category">
                     <ul>
-                        <span>moje zamowienie</span>
-                        <li><a href="#">Status zamówienia</a></li>
-                        <li><a href="#">Śledzenie przesyłki</a></li>
-                        <li><a href="#">Chcę zareklamować towar</a></li>
-                        <li><a href="#">Chcę zwrócić towar</a></li>
-                        <li><a href="#">Chcę wymienić towar</a></li>
+                        <li><a href="#" title="#">Botki damskie</a></li>
+                        <li><a href="#" title="#">botki</a></li>
+                        <li><a href="#" title="#">Glany</a></li>
+                        <li><a href="#" title="#">Kowbojki</a></li>
+                        <li><a href="#" title="#">Kozaki</a></li>
+                        <li><a href="#" title="#">Muszkieterki</a></li>
+                        <li><a href="#" title="#">Oficerki</a></li>
+                        <li><a href="#" title="#">Śniegowce</a></li>
+                        <li><a href="#" title="#">Sztyblety</a></li>
+                        <li><a href="#" title="#">Trekkingi i trapery</a></li>
                     </ul>
                     <ul>
-                        <span>moje konto</span>
-                        <li><a href="#">Zarejestruj się</a></li>
-                        <li><a href="#">Moje zamówienia</a></li>
-                        <li><a href="#">Koszyk</a></li>
-                        <li><a href="#">Ulubione</a></li>
-                        <li><a href="#">Historia transakcji</a></li>
-                        <li><a href="#">Moje rabaty</a></li>
-                        <li><a href="#">Newsletter</a></li>
+                        <li><a href="#">Półbuty</a></li>
+                        <li><a href="#">Baleriny</a></li>
+                        <li><a href="#">Czółenka</a></li>
+                        <li><a href="#">Espadryle</a></li>
+                        <li><a href="#">Lordsy</a></li>
+                        <li><a href="#">Mokasyny</a></li>
+                        <li><a href="#">Na koturnie</a></li>
+                        <li><a href="#">Na obcasie</a></li>
+                        <li><a href="#">Oxfordy</a></li>
+                        <li><a href="#">Płaskie</a></li>
                     </ul>
                     <ul>
-                        <span>regulamin</span>
-                        <li><a href="#">Informacje o sklepie</a></li>
-                        <li><a href="#">Wysyłka</a></li>
-                        <li><a href="#">Sposoby płatności i prowizji</a></li>
-                        <li><a href="#">Regulamin</a></li>
-                        <li><a href="#">Polityka prywatności</a></li>
-                        <li><a href="#">Odstąpienie od umowy</a></li>
+                        <li><a href="#">Marki</a></li>
+                        <li><a href="#">Nessi</a></li>
+                        <li><a href="#">Tamaris</a></li>
+                        <li><a href="#">Gino rossi</a></li>
+                        <li><a href="#">Carinii</a></li>
+                        <li><a href="#">Karino</a></li>
+                        <li><a href="#">Marki</a></li>
+                        <li><a href="#">Nessi</a></li>
+                        <li><a href="#">Tamaris</a></li>
+                        <li><a href="#">Gino rossi</a></li>
+                        <li><a href="#">Carinii</a></li>
+                        <li><a href="#">Karino</a></li>
                     </ul>
                     <ul>
-                        <span>wiecej</span>
-                        <li><a href="#">O nas</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Jak dobrać rozmiar</a></li>
-                        <li><a href="#">Tabela rozmiarów</a></li>
-                        <li><a href="#">Pielęgnacja obuwia</a></li>
-                        <li><a href="#">Technologie</a></li>
+                        <li><a href="#">Klapki i sandały</a></li>
+                        <li><a href="#">Klapki</a></li>
+                        <li><a href="#">Sandały</a></li>
                     </ul>
+                </div>
+                <div class="nav-baner desktop">
+                    <a class="nav-baner-card" href="#">baner reklamowy</a>
+                        <a href="#">nowości</a>
+                        <a href="#">wyprzedaż</a>
+                        <a href="#">bestsellery</a>
+                </div>
                 </li>
+                <a href="#" onclick="toggleDisplay('menu2')" title="meskie">MĘSKIE</a>
+                <li id="menu2">
+                <ul>
+                    <li></li>
+                </ul></li>
+                <a href="#" onclick="toggleDisplay('menu3')" title="torebki">TOREBKI</a>
+                <li id="menu3">
+                <ul>
+                    <li></li>
+                </ul></li>
+                <a href="#" onclick="toggleDisplay('menu4')" title="akcesoria">AKCESORIA</a>
+                <li id="menu4">
+                <ul>
+                    <li></li>
+                </ul></li>
+                <a href="#" onclick="toggleDisplay('menu5')" title="premium">PREMIUM</a>
+                <li id="menu5">
+                <ul>
+                    <li></li>
+                </ul></li>
+                <a href="#" onclick="toggleDisplay('menu6')" title="marki">MARKI</a>
+                <li id="menu6">
+                <ul>
+                    <li></li>
+                </ul></li>
+                <a href="#" onclick="toggleDisplay('menu7')" title="nowosci">NOWOŚCI</a>
+                <li id="menu7">
+                <ul>
+                    <li></li>
+                </ul></li>
+                <a href="#" onclick="toggleDisplay('menu8')" title="wyprzedaz">WYPRZEDAŻ</a>
+                <li id="menu8">
+                <ul>
+                    <li></li>
+                </ul></li>
             </ul>
+        </nav>
+        <main>
+            <section class="big-slider">
+                    <a href="#" title="big-slider">SLIDER</a>
+                    <a href="#" title="big-slider">SLIDER</a>
+            </section>
+            <section class="brand-slider">
+                    <a href="#" title="brand"><img src="./gfx/ginorossi.png" alt="ginorossi"></a>
+                    <a href="#" title="brand"><img src="./gfx/karino.png" alt="karino"></a>
+                    <a href="#" title="brand"><img src="./gfx/nessi.png" alt="nessi"></a>
+                    <a href="#" title="brand"><img src="./gfx/tamaris.png" alt="tamaris"></a>
+                    <a href="#" title="brand"><img src="./gfx/vagabond.png" alt="vagabond"></a>
+                    <a href="#" title="brand"><img src="./gfx/karino.png" alt="karino"></a>
+                    <a href="#" title="brand"><img src="./gfx/nessi.png" alt="nessi"></a>
+                    <a href="#" title="brand"><img src="./gfx/tamaris.png" alt="tamaris"></a>
+            </section>
+            <section class="baner-container">
+                <div class="baner-card"><a href="#" title="baner">BANER</a></div>
+                <div class="baner-card"><a href="#" title="baner">BANER</a></div>
+                <div class="baner-card"><a href="#" title="baner">BANER</a></div>
+                <div class="baner-card"><a href="#" title="baner">BANER</a></div>
+                <div class="baner-card"><a href="#" title="baner">BANER</a></div>
+                <div class="baner-card"><a href="#" title="baner">BANER</a></div>
+            </section>
+            <span class="for-you-title">WYBRANE DLA CIEBIE</span>
+            <section class="for-you-slider">
+                    <div class="for-you-slider-card">
+                        <a href="./view/product.html" title="boots"><img id="myimg" src="./gfx/but1.png" alt="boots"></a>
+                        <span>Botki KARINO</span>
+                        <p>3019/076-f czarny</p>
+                        <p>289,00 zł</p>
+                        <button onclick="popUp()">DODAJ DO KOSZYKA</button>
+                    </div>
+                    <div class="for-you-slider-card">
+                        <a href="./view/product.html" title="boots"><img src="./gfx/but2.png" alt="boots"></a>
+                        <span>Botki KARINO</span>
+                        <p>3019/076-f czarny</p>
+                        <p>289,00 zł</p>
+                        <button onclick="popUp()">DODAJ DO KOSZYKA</button>
+                    </div>
+                    <div class="for-you-slider-card">
+                        <a href="./view/product.html" title="boots"><img src="./gfx/but3.png" alt="boots"></a>
+                        <span>Botki KARINO</span>
+                        <p>3019/076-f czarny</p>
+                        <p>289,00 zł</p>
+                        <button onclick="popUp()">DODAJ DO KOSZYKA</button>
+                    </div>
+                    <div class="for-you-slider-card">
+                        <a href="./view/product.html" title="boots"><img src="./gfx/but4.png" alt="boots"></a>
+                        <span>Botki KARINO</span>
+                        <p>3019/076-f czarny</p>
+                        <p>289,00 zł</p>
+                        <button onclick="popUp()">DODAJ DO KOSZYKA</button>
+                    </div>
+                    <div class="for-you-slider-card">
+                        <a href="./view/product.html" title="boots"><img src="./gfx/but5.png" alt="boots"></a>
+                        <span>Botki KARINO</span>
+                        <p>3019/076-f czarny</p>
+                        <p>289,00 zł</p>
+                        <button onclick="popUp()">DODAJ DO KOSZYKA</button>
+                    </div>
+            </section>
+            <span class="blog-title">@armodo - sprawdź co nowego</span>
+            <i class="icon-facebook2"></i><i class="icon-instagram"></i>
+            <section class="blog-slider">
+                <a href="#" title="blog"><img src="./gfx/blog1.png" alt="blog1"></a>
+                <a href="#" title="blog"><img src="./gfx/blog2.png" alt="blog2"></a>
+                <a href="#" title="blog"><img src="./gfx/blog3.png" alt="blog3"></a>
+                <a href="#" title="blog"><img src="./gfx/blog4.png" alt="blog4"></a>
+            </section>
+            <span class="benefits-title">dlaczego warto kupować w armodo</span>
+            <section class="benefits">
+                <div class="benefits-photo">
+                    <img src="./gfx/blog1.png" alt="blog1">
+                    <img src="./gfx/blog2.png" alt="blog2">
+                    <img src="./gfx/blog3.png" alt="blog3">
+                    <img src="./gfx/blog4.png" alt="blog4">
+                </div>
+                <span>SEO Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie. Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie. Wygodne botk</span>
+            </section>
+        </main>
+        <footer>
+            <section class="newsletter">
+                <span>- 10% na pierwsze zakupy zapisz się do newslettera i zyskaj rabat</span>
+                <a href="#" title="newsletter">otrzymaj rabat</a>
+            </section>
+            <section class="footer-menu">
+                <ul>
+                    <li>
+                        <div>
+                                <span class="mobile" onclick="toggleDisplay('footer1')">moje zamowienie</span>
+                            <ul id="footer1">
+                                <li><a href="#">Status zamówienia</a></li>
+                                <li><a href="#">Śledzenie przesyłki</a></li>
+                                <li><a href="#">Chcę zareklamować towar</a></li>
+                                <li><a href="#">Chcę zwrócić towar</a></li>
+                                <li><a href="#">Chcę wymienić towar</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                                <span class="mobile" onclick="toggleDisplay('footer2')">moje konto</span>
+                            <ul id="footer2">
+                                <li><a href="#">Zarejestruj się</a></li>
+                                <li><a href="#">Moje zamówienia</a></li>
+                                <li><a href="#">Koszyk</a></li>
+                                <li><a href="#">Ulubione</a></li>
+                                <li><a href="#">Historia transakcji</a></li>
+                                <li><a href="#">Moje rabaty</a></li>
+                                <li><a href="#">Newsletter</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                                <span class="mobile" onclick="toggleDisplay('footer3')">regulamin</span>
+                            <ul id="footer3">
+                                <li><a href="#">Informacje o sklepie</a></li>
+                                <li><a href="#">Wysyłka</a></li>
+                                <li><a href="#">Sposoby płatności i prowizji</a></li>
+                                <li><a href="#">Regulamin</a></li>
+                                <li><a href="#">Polityka prywatności</a></li>
+                                <li><a href="#">Odstąpienie od umowy</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                        <span class="mobile" onclick="toggleDisplay('footer4')">wiecej</span>
+                        <ul id="footer4">
+                            <li><a href="#">O nas</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Jak dobrać rozmiar</a></li>
+                            <li><a href="#">Tabela rozmiarów</a></li>
+                            <li><a href="#">Pielęgnacja obuwia</a></li>
+                            <li><a href="#">Technologie</a></li>
+                        </ul>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <section class="contact">
+                <i class="icon-phone desktop">+48 786818322</i><i class="icon-mail desktop">info@armodo.com</i><i class="icon-facebook desktop">Odwiedź nas na facebooku <i class="icon-right-arrow"></i></i>
+                <img src="./gfx/iai_logo.png" alt="iai">
+            </section>
+            <img class="desktop" src="./gfx/footer.png" alt="footer">
+        </footer>
+        <!-- popup -->
+        <section id="popUp" class="pop-up desktop">
+            <div class="product_pop-up">
+            <div class="name">
+                <div class="promotion">
+                    <span>promocja</span>
+                    <div class="stars">
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                        <i class="icon-star"></i>
+                    </div>
+                </div>
+                <span id="name"></span>
+            </div>
+            <div class="close">
+                <span onclick="closePopUp()">X</span>
+            </div>
+                <div class="main-slider">
+                    <img id="img1">
+                    <img id="img2">
+                    <img id="img3">
+                </div>
+                <div class="info">
+                    <a href="#" title="karino"><img src="../gfx/karino2.png" alt="brand"></a>
+                    <div class="price">
+                        <span>289,00 zł</span>
+                        <div><span id="price"></span><span>Oszczędzasz 10% (22,56 zł)</span></div>
+                    </div>
+                    
+                    <i>Zamów dziś, wyślemy w czwartek 12.02</i>
+                <form action="#" id="size">
+                    <select id="selectSize">
+                        <option value="0">
+                            <span>Wybierz rozmiar</span>
+                        </option>
+                        <option value="1">
+                            <span>Rozmiar: </span><span>38</span>
+                        </option>
+                        <option value="2">
+                            <span>Rozmiar: </span><span>39</span>
+                        </option>
+                    </select>
+                    <i class="icon-width"><a href="#" title="size"> Tabela rozmiarów</a></i>
+                    <div class="add"><button type="submit"> dodaj do koszyka</button><i class="icon-heart"></i></div>
+                </form>    
+                        <i class="icon-truck">Darmowa dostawa</i>
+                        <i class="icon-return">30 dni na zwrot</i>
+                        <i class="icon-phone">Zamów telefonicznie | +48 786818322</i>
+                        <span>dostępne kolory</span>
+                        <div class="color">
+                            <a href="#" title="color1"><img src="../gfx/but5.png" alt="but">czarny</a>
+                            <a href="#" title="color1"><img src="../gfx/but5.png" alt="but">brązowy</a>
+                        </div>
+                </div>
+            </div>
         </section>
-        <section class="footer-contact desktop">
-            <div><i class="icon-phone2"> +48 786818322 </i></div>
-            <div><i class="icon-mail"> info@armodo.com </i></div>
-            <div><i class="icon-facebook">Odwiedź nas na facebooku></i></div>
-            <a href="#"><img src="./gfx/iai_logo.png" alt="#"></a>
-        </section>
-        <img class="desktop" src="./gfx/footer.png" alt="#">
-    </footer>
     </div>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../js/slider.js"></script>
-    <script src="../js/script.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/ajax.js"></script>
 </body>
 </html>
