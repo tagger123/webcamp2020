@@ -35,7 +35,6 @@ $('.main-slider').slick({
     prevArrow:"<button type='button' class='slick-prev pull-left'><i class='icon-left-arrow'></i></button>",
     nextArrow:"<button type='button' class='slick-next pull-right'><i class='icon-right-arrow'></i></button>",
 })
-
 $('.for-you-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 1,
@@ -65,6 +64,22 @@ $('.blog-slider').slick({
             slidesToShow: 1,
             slidesToScroll:1,
             arrow:false
+        }
+    }]
+});
+
+$('.accessories').slick({
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    arrows:true,
+    prevArrow:"<button type='button' class='slick-prev pull-left'><i class='icon-left-arrow'></i></button>",
+    nextArrow:"<button type='button' class='slick-next pull-right'><i class='icon-right-arrow'></i></button>",
+    responsive: [{
+        breakpoint: 460,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll:1,
+            arrows:false
         }
     }]
 });

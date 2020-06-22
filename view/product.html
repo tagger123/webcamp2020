@@ -10,28 +10,30 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header id="header">
             <a href="../index.html" title="main"><img src="../gfx/Armodo_pl_LOGO.png" alt="Logo"></a>
             <form action="#">
-                <input type="text"><i class="icon-search"></i>
+                <input type="text" placeholder="Wpisz czego szukasz"><i class="icon-search"></i>
             </form>
-            <a class="desktop" href="#" title="telephone"><i class="icon-phone"></i></a>
-            <a class="desktop" href="#" title="account"><i class="icon-group-1"></i></a>
-            <a href="#" title="likes"><i class="icon-heart"></i></a>
-            <a href="#" title="basket">
-            <div class="price">
-                <i class="icon-basket"></i>
-                <div class="desktop">
-                    <span>KOSZYK</span>
-                    <p>225,00zł</p>
-                </div>
+            <div class="helper">
+                <a class="desktop" href="#" title="telephone"><i class="icon-phone"></i></a>
+                <a class="desktop" href="#" title="account"><i class="icon-group-1"></i></a>
+                <a href="#" title="likes"><i class="icon-heart"></i></a>
+                <a href="#" title="basket">
+                <div class="price">
+                    <i class="icon-basket"></i>
+                    <div class="text desktop">
+                        <span>KOSZYK</span>
+                        <p>225,00zł</p>
+                    </div>
                 <i class="icon-right-arrow desktop"></i>
             </div>
             </a>
             <div class="language desktop">
                 <button><img src="../gfx/pl.png" alt="pl"><i class="icon-down-open"></i></button>
             </div>
-            <button class="mobile"><img class="hamburger" src="../gfx/icon_hamburger.svg"></button>
+            <button class="mobile"><img class="hamburger" onclick="hamburger()" src="../gfx/icon_hamburger.svg"></button>
+            </div>
         </header>
         <div class="discount"><a href="#" title="discount">-20% na całą kolekcję zimową!</a></div>
         <div class="benefits-baner desktop">
@@ -39,38 +41,93 @@
             <a href="#" title="dostawa"><i class="icon-return"> 30dni na zwrot</i></a>
             <a href="#" title="dostawa"><i class="icon-sale"> 10% na pierwsze zakupy</i></a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#" title="damskie">DAMSKIE</a>
-                <ul>
-                    <li></li>
-                </ul>
+        <nav id="nav">
+            <ul><a href="#" onclick="toggleDisplay('menu1')" title="damskie">DAMSKIE</a>
+                <li id="menu1">
+                <div class="category">
+                    <ul>
+                        <li><a href="#" title="#">Botki damskie</a></li>
+                        <li><a href="#" title="#">botki</a></li>
+                        <li><a href="#" title="#">Glany</a></li>
+                        <li><a href="#" title="#">Kowbojki</a></li>
+                        <li><a href="#" title="#">Kozaki</a></li>
+                        <li><a href="#" title="#">Muszkieterki</a></li>
+                        <li><a href="#" title="#">Oficerki</a></li>
+                        <li><a href="#" title="#">Śniegowce</a></li>
+                        <li><a href="#" title="#">Sztyblety</a></li>
+                        <li><a href="#" title="#">Trekkingi i trapery</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Półbuty</a></li>
+                        <li><a href="#">Baleriny</a></li>
+                        <li><a href="#">Czółenka</a></li>
+                        <li><a href="#">Espadryle</a></li>
+                        <li><a href="#">Lordsy</a></li>
+                        <li><a href="#">Mokasyny</a></li>
+                        <li><a href="#">Na koturnie</a></li>
+                        <li><a href="#">Na obcasie</a></li>
+                        <li><a href="#">Oxfordy</a></li>
+                        <li><a href="#">Płaskie</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Marki</a></li>
+                        <li><a href="#">Nessi</a></li>
+                        <li><a href="#">Tamaris</a></li>
+                        <li><a href="#">Gino rossi</a></li>
+                        <li><a href="#">Carinii</a></li>
+                        <li><a href="#">Karino</a></li>
+                        <li><a href="#">Marki</a></li>
+                        <li><a href="#">Nessi</a></li>
+                        <li><a href="#">Tamaris</a></li>
+                        <li><a href="#">Gino rossi</a></li>
+                        <li><a href="#">Carinii</a></li>
+                        <li><a href="#">Karino</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Klapki i sandały</a></li>
+                        <li><a href="#">Klapki</a></li>
+                        <li><a href="#">Sandały</a></li>
+                    </ul>
+                </div>
+                <div class="nav-baner desktop">
+                    <a class="nav-baner-card" href="#">baner reklamowy</a>
+                        <a href="#">nowości</a>
+                        <a href="#">wyprzedaż</a>
+                        <a href="#">bestsellery</a>
+                </div>
                 </li>
-                <li><a href="#" title="meskie">MĘSKIE</a>
+                <a href="#" onclick="toggleDisplay('menu2')" title="meskie">MĘSKIE</a>
+                <li id="menu2">
                 <ul>
                     <li></li>
                 </ul></li>
-                <li><a href="#" title="torebki">TOREBKI</a>
+                <a href="#" onclick="toggleDisplay('menu3')" title="torebki">TOREBKI</a>
+                <li id="menu3">
                 <ul>
                     <li></li>
                 </ul></li>
-                <li><a href="#" title="akcesoria">AKCESORIA</a>
+                <a href="#" onclick="toggleDisplay('menu4')" title="akcesoria">AKCESORIA</a>
+                <li id="menu4">
                 <ul>
                     <li></li>
                 </ul></li>
-                <li><a href="#" title="premium">PREMIUM</a>
+                <a href="#" onclick="toggleDisplay('menu5')" title="premium">PREMIUM</a>
+                <li id="menu5">
                 <ul>
                     <li></li>
                 </ul></li>
-                <li><a href="#" title="marki">MARKI</a>
+                <a href="#" onclick="toggleDisplay('menu6')" title="marki">MARKI</a>
+                <li id="menu6">
                 <ul>
                     <li></li>
                 </ul></li>
-                <li><a href="#" title="nowosci">NOWOŚCI</a>
+                <a href="#" onclick="toggleDisplay('menu7')" title="nowosci">NOWOŚCI</a>
+                <li id="menu7">
                 <ul>
                     <li></li>
                 </ul></li>
-                <li><a href="#" title="wyprzedaz">WYPRZEDAŻ</a>
+                <a href="#" onclick="toggleDisplay('menu8')" title="wyprzedaz">WYPRZEDAŻ</a>
+                <li id="menu8">
                 <ul>
                     <li></li>
                 </ul></li>
@@ -94,19 +151,36 @@
                         <img src="../gfx/but5.png" alt="product3">
                     </div>
                 </div>
+                <div class="name">
+                    <div class="name-text">
+                        <span>botki karino</span>
+                        <p>3019/076-F czarny - dłuższa nazwa produktu zajmująca więcej miejsca</p>
+                    </div>
+                    <div class="stars">
+                        <span>promocja</span>
+                        <div>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <i class="icon-star"></i>
+                            <span>4.5</span>
+                    </div>
+                    </div>
+                </div>
                 <div class="main-slider">
                     <img src="../gfx/but5.png" alt="product3">
                     <img src="../gfx/but5.png" alt="product3">
                     <img src="../gfx/but5.png" alt="product3">
                 </div>
                 <div class="info">
-                    <a href="#" title="karino"><img src="../gfx/karino2.png" alt="brand"></a>
+                    <a href="#" title="karino"><img src="../gfx/karino2.png" alt="brand"></br>zobacz inne produkty ></a>
                     <div class="price">
                         <span>289,00 zł</span>
                         <div><span>321,00 zł</span><span>Oszczędzasz 10% (22,56 zł)</span></div>
                     </div>
                     
-                    <i>Zamów dziś, wyślemy w czwartek 12.02</i>
+                    <i class="icon-time">Zamów dziś, wyślemy w czwartek 12.02</i>
                 <form action="#" id="size">
                     <select id="selectSize">
                         <option value="0">
@@ -119,16 +193,21 @@
                             <span>Rozmiar: </span><span>39</span>
                         </option>
                     </select>
-                    <i class="icon-width"><a href="#" title="size"> Tabela rozmiarów</a></i>
+                </br><i class="icon-width"><a href="#" title="size"> Tabela rozmiarów</a></i>
                     <div class="add"><button type="submit"> dodaj do koszyka</button><i class="icon-heart"></i></div>
-                </form>    
-                        <i class="icon-truck">Darmowa dostawa</i>
-                        <i class="icon-return">30 dni na zwrot</i>
-                        <i class="icon-phone">Zamów telefonicznie | +48 786818322</i>
+                </form>
+                <div class="benef">
+                    <i class="icon-truck">Darmowa dostawa</i>
+                    <i class="icon-return">30 dni na zwrot</i>
+                    <i class="icon-phone">Zamów telefonicznie | +48 786818322</i>
+                </div>
                 </div>
                 <div class="color">
-                    <a href="#" title="color1"><img src="../gfx/but5.png" alt="but">czarny</a>
-                    <a href="#" title="color1"><img src="../gfx/but5.png" alt="but">brązowy</a>
+                    <span>dostepne kolory</span>
+                    <div class="color-element">       
+                        <a href="#" title="color1"><img src="../gfx/but5.png" alt="but">czarny</a>
+                        <a href="#" title="color1"><img src="../gfx/but5.png" alt="but">brązowy</a>    
+                    </div>
                 </div>
             </section>
             <section class="detal-info">
@@ -172,8 +251,6 @@
                     <img src="../gfx/but5.png" alt="#">
                 </div>
                 <div class="accessories">
-                    <span>DOBIERZ NIEZBĘDNE AKCESORIA</span>
-                    <div class="slider-accessories">
                         <div class="slider-element">
                             <img src="../gfx/lateks-aloe.png" alt="#">
                             <div class="text">
@@ -202,8 +279,7 @@
                                 <p>8,50 zł</p>
                             </div>
                         </div>
-                    </div>
-            </div>
+                </div>
             </section>
             <span class="for-you-title">WYBRANE DLA CIEBIE</span>
             <section class="for-you-slider">
@@ -238,8 +314,10 @@
                         <p>289,00 zł</p>
                     </div>
             </section>
-            <span class="blog-title">@armodo - sprawdź co nowego</span>
-            <i class="icon-facebook2"></i><i class="icon-instagram"></i>
+            <div class="blog-title">
+                <span>@armodo - sprawdź co nowego</span>
+                <div><i class="icon-facebook2"></i><i class="icon-instagram"></i></div>
+            </div>
             <section class="blog-slider">
                 <a href="#" title="blog"><img src="../gfx/blog1.png" alt="blog1"></a>
                 <a href="#" title="blog"><img src="../gfx/blog2.png" alt="blog2"></a>
@@ -290,11 +368,14 @@
             <button onclick="closeSize2()">X</button>
         </div>
         </main>
-        <footer>
+        <footer>            
             <section class="newsletter">
-                <span>- 10% na pierwsze zakupy zapisz się do newslettera i zyskaj rabat</span>
+            <div class="newsletter-content">
+                <span>- 10% na pierwsze zakupy</span>
+                <span>Zapisz się do newslettera</span>
                 <a href="#" title="newsletter">otrzymaj rabat</a>
-            </section>
+            </div>
+        </section>
             <section class="footer-menu">
                 <ul>
                     <li>

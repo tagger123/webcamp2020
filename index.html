@@ -8,23 +8,25 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Document</title>
 </head>
+<script src="./js/ajax.js"></script>
 <body>
     <div class="container">
         <header id="header">
             <a href="./index.html" title="main"><img src="./gfx/Armodo_pl_LOGO.png" alt="Logo"></a>
             <form action="#">
-                <input type="text"><i class="icon-search"></i>
+                <input type="text" placeholder="Wpisz czego szukasz"><i class="icon-search"></i>
             </form>
-            <a class="desktop" href="#" title="telephone"><i class="icon-phone"></i></a>
-            <a class="desktop" href="#" title="account"><i class="icon-group-1"></i></a>
-            <a href="#" title="likes"><i class="icon-heart"></i></a>
-            <a href="#" title="basket">
-            <div class="price">
-                <i class="icon-basket"></i>
-                <div class="desktop">
-                    <span>KOSZYK</span>
-                    <p>225,00zł</p>
-                </div>
+            <div class="helper">
+                <a class="desktop" href="#" title="telephone"><i class="icon-phone"></i></a>
+                <a class="desktop" href="#" title="account"><i class="icon-group-1"></i></a>
+                <a href="#" title="likes"><i class="icon-heart"></i></a>
+                <a href="#" title="basket">
+                <div class="price">
+                    <i class="icon-basket"></i>
+                    <div class="text desktop">
+                        <span>KOSZYK</span>
+                        <p>225,00zł</p>
+                    </div>
                 <i class="icon-right-arrow desktop"></i>
             </div>
             </a>
@@ -32,6 +34,7 @@
                 <button><img src="./gfx/pl.png" alt="pl"><i class="icon-down-open"></i></button>
             </div>
             <button class="mobile"><img class="hamburger" onclick="hamburger()" src="./gfx/icon_hamburger.svg"></button>
+            </div>
         </header>
         <div class="discount"><a href="#" title="discount">-20% na całą kolekcję zimową!</a></div>
         <div class="benefits-baner desktop">
@@ -147,12 +150,12 @@
                     <a href="#" title="brand"><img src="./gfx/tamaris.png" alt="tamaris"></a>
             </section>
             <section class="baner-container">
-                <div class="baner-card"><a href="#" title="baner">BANER</a></div>
-                <div class="baner-card"><a href="#" title="baner">BANER</a></div>
-                <div class="baner-card"><a href="#" title="baner">BANER</a></div>
-                <div class="baner-card"><a href="#" title="baner">BANER</a></div>
-                <div class="baner-card"><a href="#" title="baner">BANER</a></div>
-                <div class="baner-card"><a href="#" title="baner">BANER</a></div>
+                <div class="baner-card"><a href="#" title="baner">BANER REKLAMOWY</a></div>
+                <div class="baner-card"><a href="#" title="baner">BANER REKLAMOWY</a></div>
+                <div class="baner-card"><a href="#" title="baner">BANER REKLAMOWY</a></div>
+                <div class="baner-card"><a href="#" title="baner">BANER REKLAMOWY</a></div>
+                <div class="baner-card"><a href="#" title="baner">BANER REKLAMOWY</a></div>
+                <div class="baner-card"><a href="#" title="baner">BANER REKLAMOWY</a></div>
             </section>
             <span class="for-you-title">WYBRANE DLA CIEBIE</span>
             <section class="for-you-slider">
@@ -192,8 +195,10 @@
                         <button onclick="popUp()">DODAJ DO KOSZYKA</button>
                     </div>
             </section>
-            <span class="blog-title">@armodo - sprawdź co nowego</span>
-            <i class="icon-facebook2"></i><i class="icon-instagram"></i>
+            <div class="blog-title">
+                <span>@armodo - sprawdź co nowego</span>
+                <div><i class="icon-facebook2"></i><i class="icon-instagram"></i></div>
+            </div>
             <section class="blog-slider">
                 <a href="#" title="blog"><img src="./gfx/blog1.png" alt="blog1"></a>
                 <a href="#" title="blog"><img src="./gfx/blog2.png" alt="blog2"></a>
@@ -210,11 +215,22 @@
                 </div>
                 <span>SEO Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie. Wygodne botki marki Carinii. Wierzchnią część butów tworzy Skóra naturalna - Zamsz. Botki posiadają obcas o wysokości 9,5 cm. Botki posiadają wyściółkę, to materiał, skóra. Wkładka to skóra. Trwała podeszwa to wysokogatunkowe tworzywo. Kobiecy fason, który sprawdzi się przy różnej pogodzie. Wygodne botk</span>
             </section>
+            <div id="selectSize2" class="selectSize">
+                <span>PROSZĘ WYBIERZ ROZMIAR JAKI CHCIAŁBYŚ KUPIĆ</span>
+                <button onclick="closeSize1()">X</button>
+            </div>        
+            <div id="selectSize3" class="selectSize">
+                <img src="../gfx/25.svg" alt="#">
+                <button onclick="closeSize2()">X</button>
+            </div>
         </main>
         <footer>
             <section class="newsletter">
-                <span>- 10% na pierwsze zakupy zapisz się do newslettera i zyskaj rabat</span>
-                <a href="#" title="newsletter">otrzymaj rabat</a>
+                <div class="newsletter-content">
+                    <span>- 10% na pierwsze zakupy</span>
+                    <span>Zapisz się do newslettera</span>
+                    <a href="#" title="newsletter">otrzymaj rabat</a>
+                </div>
             </section>
             <section class="footer-menu">
                 <ul>
@@ -242,7 +258,7 @@
                             </ul>
                         </div>
                         <div>
-                                <span class="mobile" onclick="toggleDisplay('footer3')">regulamin</span>
+                                <span class="mobile" onclick="toggleDisplay('footer3')">regulaminy</span>
                             <ul id="footer3">
                                 <li><a href="#">Informacje o sklepie</a></li>
                                 <li><a href="#">Wysyłka</a></li>
@@ -336,6 +352,5 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="../js/slider.js"></script>
     <script src="./js/script.js"></script>
-    <script src="./js/ajax.js"></script>
 </body>
 </html>
